@@ -21,8 +21,8 @@ use App\Http\Controllers\ProductController;
 //     return view('dbconn');
 // });
 
-Route::middleware(['web'])->group(function () {
-    // Your routes here
-    Route::resource('product',ProductController::class);
-});
+// Route::middleware(['web'])->group(function () {
+//     // Your routes here
+//     Route::resource('product',ProductController::class);
+// });
 

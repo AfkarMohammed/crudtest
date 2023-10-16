@@ -4,7 +4,7 @@ namespace LP\Calculator;
 
 use Illuminate\Support\ServiceProvider;
 
-class CalculatorServiceProvider extends ServiceProvider
+class CrudServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -14,7 +14,7 @@ class CalculatorServiceProvider extends ServiceProvider
     public function register()
     {
         
-        $this->app->make('LP\Calculator\CalculatorController');
+        $this->app->make('LP\Calculator\CrudController');
         $this->loadViewsFrom(__DIR__.'/views','calculator');
     }
 
